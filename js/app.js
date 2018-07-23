@@ -78,6 +78,7 @@
   }
 
   function clearOrders() {
+    document.getElementById('body_div').innerHTML='';
     document.getElementById('table_div').innerHTML='<tbody></tbody>';
   }
 
