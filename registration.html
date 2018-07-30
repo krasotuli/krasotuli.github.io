@@ -1,11 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>Красотули</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="img/favicon.ico">
 
   </head>
@@ -15,48 +14,49 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="80px"></a>
+      <a class="navbar-brand" href="index.html"><img href="img/logo.png"></img></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="index.html">мои заказы</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="contact.html">контакты</a>
+            <a class="nav-link" href="contact.html">контакты</a>
           </li>
         </ul>
 
-        <button id="signout-button" class="btn btn-outline-info" style="display: none;">Выйти</button>
       </div>
     </nav>
 
     </br>
 
-    <div id="body" style="margin-left: 20px;">
-      По вопросам обращаться к администратору сайта (Александра)
-
-      </br>
-
-      <table id="table">
-        <tr>
-          <td size="100px;"><i class="fa fa-phone" aria-hidden="true"></i></td>
-          <td><img src="img/num.png" height="10" width="115"/></td>
-        </tr>
-        <tr>
-          <td size="100px;"><i class="fa fa-vk" aria-hidden="true"></i></td>
-          <td><a href="www.vk.com">vk.com/idXXXXXXX</a></td>
-        </tr>
-        <tr>
-          <td size="100px;"><i class="fa fa-envelope" aria-hidden="true"></i></td>
-          <td><img src="img/env.png" height="13" width="150"/></td>
-        </tr>
-
-      <table>
-    </div>
+    <!-- TODO: registration with athenticated user without GUI
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+    -->
+    <form id="registration_form" style="width:250px; margin-left: 20px;">
+          <div class="form-group">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" class="form-control" id="username">
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <button class="btn btn-outline-info">Зарегистрироваться</button>
+    </form>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="js/registration.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+
   </body>
 </html>

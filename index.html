@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
   </head>
   <body>
 
@@ -12,7 +13,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.html">"Красотули"</a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="80px"></img></a>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
@@ -23,7 +24,6 @@
           </li>
         </ul>
 
-        <button id="authorize-button" class="btn btn-outline-info" style="display: none;">Войти</button>
         <button id="signout-button" class="btn btn-outline-info" style="display: none;">Выйти</button>
       </div>
     </nav>
@@ -39,7 +39,10 @@
             <label for="password">Пароль:</label>
             <input type="password" class="form-control" id="password">
           </div>
-          <button class="btn btn-outline-info">Войти</button>
+          <div class="form-group inline">
+            <button id="btn_login" class="btn btn-outline-info">Войти</button>
+            <!-- <button id="btn_register" class="btn btn-outline-secondary" onclick="window.location.href='/registration.html';">Регистрация</button> -->
+          </div>
     </form>
 
     <table id="table_div" class="table table-striped" style="display: none;">

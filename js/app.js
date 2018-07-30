@@ -6,7 +6,7 @@ var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"
 // Authorization scopes required by the API; multiple scopes can be included, separated by spaces.
 var SCOPES = "https://www.googleapis.com/auth/spreadsheets.readonly";
 
-var authorizeButton = document.getElementById('authorize-button');
+var registerButton = document.getElementById('btn_register');
 var signoutButton = document.getElementById('signout-button');
 var persons;
 var table = document.getElementById('table_div');
@@ -90,6 +90,7 @@ async function getAllOrders() {
 
   var form = $('#auth_form');
   form.submit(function (e) {
+    console.log(e);
     e.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
