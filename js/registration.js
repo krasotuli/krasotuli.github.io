@@ -52,6 +52,6 @@ function write() {
      resource: body
   }).then((response) => {
     var result = response.result;
-    console.log(`${result.updatedCells} cells updated.`);
+    //console.log(`${result.updatedCells} cells updated.`);
   });
 }

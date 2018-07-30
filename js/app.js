@@ -48,7 +48,7 @@ function reloadPage() {
 }
 
 async function getAllPersons() {
-  console.log("getAllPersons");
+  //console.log("getAllPersons");
   let response = await gapi.client.sheets.spreadsheets.values.get({spreadsheetId: '1ORV0CFDXnwGDL3d67xBcVmQhOtNheLrRpeAsswXCI2g',range: 'person!A1:C'});
   var range = response.result;
   let users = range.values;
@@ -90,7 +90,7 @@ async function getAllOrders() {
 
   var form = $('#auth_form');
   form.submit(function (e) {
-    console.log(e);
+    //console.log(e);
     e.preventDefault();
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
